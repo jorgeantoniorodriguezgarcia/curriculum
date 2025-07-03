@@ -3,7 +3,7 @@
 ### Ingeniero de Software Senior · Arquitecto de Soluciones Symfony · DevOps ·IA aplicada al desarrollo · 25 años liderando proyectos complejos
 **Oviedo, Asturias · 686 61 70 71 · jorge@rodriguez-garcia.es**
 
-[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/tu-usuario/)
+[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](www.linkedin.com/in/jorge-antonio-rodríguez-garcía-740a7b55)
 &nbsp;
 [<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />](mailto:jorge@rodriguez-garcia.es)
 
