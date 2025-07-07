@@ -23,12 +23,13 @@ Ingeniero de Software y Licenciado en ADE con 25 años de experiencia liderando 
 
 ## 🛠️ Competencias Técnicas
 
-**Lenguajes:** PHP, Python, SQL  
-**Frameworks y Tecnologías:** Symfony, Doctrine, API REST, Twig  
-**Arquitectura y Metodologías:** DDD, CQRS, TDD, Clean Architecture, SOLID, Ágiles (XP, Scrum), Pair Programming, DevOps  
-**Bases de Datos:** MySQL/MariaDB, Oracle, PostgreSQL  
-**IA y Machine Learning:** Desarrollo asistido por IA (Cursor, Claude), Modelos de clasificación, Extracción de datos  
-**DevOps y Administración de Sistemas:** Administración de Servidores Linux, Servidores de Correo (Zimbra, Sendmail), Servidores de Ficheros (Samba), Virtualización (VMWare, XenCenter), Redes y Balanceo de Carga (Iptables, enrutamiento avanzado), Servidores Web (Apache).
+- **Lenguajes**: PHP, Python, SQL  
+- **Frameworks y Tecnologías**: Symfony, Doctrine, API REST, Twig  
+- **Arquitectura y Metodologías**: DDD, CQRS, TDD, Clean Architecture, SOLID, Ágiles (XP, Scrum), Pair Programming, DevOps  
+- **Bases de Datos**: MySQL/MariaDB, Oracle, PostgreSQL  
+- **IA y Machine Learning**: Desarrollo asistido por IA (Cursor, Claude), Modelos de clasificación, Extracción de datos  
+- **DevOps y Administración de Sistemas**: Administración de Servidores Linux, Zimbra, Samba, VMWare, XenCenter, Apache, etc.
+
 ---
 
 ## 💼 Experiencia Profesional
