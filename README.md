@@ -121,9 +121,27 @@ L3 Support para infraestructura gubernamental. Automatización de despliegues: 4
 
 ---
 
-## Proyectos Destacados — Cómo Pienso
+## Proyectos Destacados
 
-A continuación detallo proyectos que ilustran mi enfoque arquitectónico: el reto, la decisión de diseño, las alternativas descartadas y por qué.
+| Proyecto | Qué es | Año |
+|----------|--------|-----|
+| **Periscope** | Pipeline ML clasificación de riesgo en ética deportiva. Macro-F1 +17%. | 2025–2026 |
+| **Framework Agéntico** | Orquestador de agentes IA con máquina de estados y planificador gobernado. | 2024–act. |
+| **Hub Productividad IA** | PWA gestión empresarial con Jira/Slack/Gmail + proxy IA + servidor MCP. | 2024–act. |
+| **NIMROD** | Plataforma IoT monitorización y alertas. DDD+CQRS+Hexagonal. 5 clientes en producción. | 2017–act. |
+| **Conforcat** | Plataforma formación autonómica con IA (×5 TTM), RabbitMQ, chatbot RAG. | 2024 |
+| **DIBA Boletines** | Pipeline visión computador para ~60.000 boletines históricos. | 2023 |
+| **Expedion** | Plataforma low-code metaprogramación para expedientes. Meses → semanas. | 2023+ |
+| **NIMROD Alertas** | Arquitectura reutilizable de alertas multicanal con motor de reglas dinámico. | 2022 |
+| **The Switchers** | Meta-aplicación generadora de Toolboxes multilingüe LTR/RTL. | 2019 |
+| **ERP SERIDA** | ERP misión crítica 15+ años. Motor contable Nested Sets. Uptime 99,9%. | 2002–2017 |
+| **RAD Framework** | Framework metaprogramación PFC. Explotado comercialmente 8+ años. | 2012–2020 |
+
+---
+
+## Cómo Pienso — Decisiones Arquitectónicas
+
+A continuación detallo proyectos que ilustran mi enfoque: el reto, la decisión de diseño, las alternativas descartadas y por qué.
 
 ### Visión por Computador para Boletines Históricos (DIBA, 2023)
 
