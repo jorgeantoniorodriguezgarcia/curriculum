@@ -60,13 +60,19 @@ Diseño y liderazgo de propuestas técnicas de IA para entornos regulados con tr
 Sistema propio con DDD + CQRS + Hexagonal. Alertas en tiempo real por VoIP y SMS con motor de reglas dinámico. Desplegado y operando en producción en 5 organizaciones: Servicio Regional de Salud (~100 centros), 2 Mutuas de Accidentes de Trabajo, Empresa Pública de infraestructuras y Consorcio de Transporte.
 
 **Hitos de Ingeniería**
-- Adopción de IA generativa en el ciclo de desarrollo de una plataforma de formación autonómica (Conforcat): reducción de time-to-market ×5, integración asíncrona con RabbitMQ y chatbot RAG.
-- Plataforma low-code de metaprogramación (Expedion): permite generar sistemas completos de gestión de expedientes desde interfaz visual. Producto estratégico que redujo entregas de meses a semanas, reutilizado por otros equipos.
-- Pipeline de visión por computador para ~60.000 boletines históricos (DIBA): detección de columnas mediante histogramas sobre coordenadas OCR, superando herramientas comerciales en precisión.
-- Modernización de sistema legacy años 90 (Baix Empordà): Symfony como host del código antiguo, seguridad centralizada sin reescritura.
-- Motores ETL genéricos basados en CQRS para ingesta masiva desde fuentes heterogéneas — eliminaron scripts de importación repetitivos.
+- Pipeline ML clasificación de riesgo (Periscope): dataset curation iterativo, Macro-F1 +17% solo con limpieza de datos.
+- Framework agéntico con máquina de estados y planificador gobernado: especificaciones → código trazable y auditable.
+- Hub de productividad con servidor MCP: agentes IA controlan Jira/Slack/Gmail a través de protocolo estándar, no APIs directas.
+- Plataforma IoT (NIMROD) con DDD+CQRS: 5 organizaciones en producción (~100 centros salud), motor de reglas dinámico con alertas VoIP/SMS.
+- Adopción de IA generativa en plataforma de formación (Conforcat): reducción de time-to-market ×5, integración asíncrona RabbitMQ y chatbot RAG.
+- Pipeline de visión por computador para ~60.000 boletines históricos (DIBA): OCR como sensor de posición + histogramas, superando herramientas comerciales.
+- Plataforma low-code de metaprogramación (Expedion): sistemas de expedientes desde interfaz visual, meses → semanas, reutilizada por otros equipos.
+- Motor de alertas reutilizable (NIMROD Alertas): canales de notificación como puertos hexagonales, añadir canal = implementar adaptador.
+- Meta-aplicación multilingüe LTR/RTL (The Switchers): toolboxes interactivos generados por configuración para 10+ países.
+- Modernización legacy años 90 (Baix Empordà): Symfony como host del código antiguo, seguridad centralizada sin reescritura.
+- Motores ETL genéricos basados en CQRS para ingesta masiva — eliminaron scripts repetitivos.
 - Abstracciones para identidad digital (Cl@ve, Firma Digital, FNMT) y pasarelas de pago — reutilizadas en múltiples proyectos.
-- Infraestructura end-to-end: CI/CD, Docker, Linux enterprise multi-sede.
+- Infraestructura end-to-end: CI/CD con auditoría arquitectónica, Docker, Linux enterprise multi-sede.
 
 ---
 
