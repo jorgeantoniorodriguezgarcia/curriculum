@@ -161,6 +161,42 @@ A continuación detallo proyectos que ilustran mi enfoque arquitectónico: el re
 
 ---
 
+### Gobernanza de Agentes IA (Framework Agéntico, 2024)
+
+**El reto:** La IA generativa produce código rápido pero impredecible. ¿Cómo escalar el uso de agentes IA en un equipo sin perder control arquitectónico ni trazabilidad?
+
+**Mi decisión:** Un framework con máquina de estados y planificador gobernado. Los agentes no ejecutan libremente — siguen un plan canónico compilado desde especificaciones (BDD, OpenAPI, texto libre) con origin tracking. Cada paso es auditable.
+
+**Alternativa descartada:** Dejar que los agentes operen con prompts ad-hoc y revisar manualmente el output. Funciona para un desarrollador solo; es ingobernable con un equipo.
+
+**Trade-off:** Más estructura inicial (compilar plan antes de ejecutar), pero garantía de trazabilidad completa y reproducibilidad. Si un agente produce código incorrecto, puedo rastrear exactamente qué especificación lo causó.
+
+---
+
+### Plataforma IoT Reutilizable para Dominios Distintos (NIMROD, 2017–2026)
+
+**El reto:** Construir una plataforma de monitorización y alertas que sirviera igual para centros de salud (agresiones), transporte ferroviario (meteorología) y mutuas (SOS laboral). Dominios completamente diferentes, misma necesidad: detectar eventos, evaluar reglas y alertar en tiempo real.
+
+**Mi decisión:** DDD puro: cada despliegue tiene su propio Bounded Context con entidades y reglas de dominio específicas, pero comparte la infraestructura de alertas (VoIP, SMS) y el motor de reglas dinámico. CQRS para separar la ingesta masiva de eventos de la consulta analítica.
+
+**Alternativa descartada:** Una aplicación monolítica parametrizable. Habría sido más rápida de desplegar inicialmente, pero cada nuevo dominio habría contaminado el modelo de los anteriores.
+
+**Trade-off:** Más esfuerzo en el diseño inicial del core abstracto, pero 5 organizaciones en producción con despliegues independientes que no se afectan entre sí. Nuevos clientes se integran en semanas, no meses.
+
+---
+
+### Pipeline ML con Dataset Sucio (Periscope, 2025)
+
+**El reto:** Clasificar automáticamente incidencias en ética deportiva (agresiones, bullying, discriminación). El dataset tenía etiquetas inconsistentes y categorías desbalanceadas.
+
+**Mi decisión:** Pipeline iterativo por sprints: primero limpiar el dataset (curation + corrección de etiquetas), luego reentrenar. No tiene sentido optimizar hiperparámetros sobre datos sucios.
+
+**Alternativa descartada:** Ir directamente a entrenar modelos más potentes sobre el dataset original. Más compute, mismos errores sistémicos.
+
+**Trade-off:** Más tiempo en limpieza manual de datos (sprints dedicados), pero mejora de Macro-F1 de 0.35 a 0.41 (+17%) solo con la primera fase de limpieza. El modelo es tan bueno como los datos que lo alimentan.
+
+---
+
 ## Listado Completo de Proyectos
 
 > He sido arquitecto principal en la mayoría de 50+ proyectos para Administración Pública y sector privado. Para no sobrecargar este documento, el listado completo con resúmenes está en un fichero dedicado.

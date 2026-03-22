@@ -1,41 +1,4 @@
-
-
-## R&D Lab — Proyectos Personales con IA y Arquitectura (2012–2026)
-
-| Proyecto | Descripción | Stack | Año |
-|----------|-------------|-------|-----|
-| Framework Agéntico | Orquestador portable de agentes IA con máquina de estados y planificador gobernado. BDD/OpenAPI → código trazable. | Claude Code · YAML · Python | 2024–2026 |
-| Hub Productividad (Tasks) | PWA gestión empresarial: Jira, Gmail, Slack con proxy IA y servidor MCP. v2 en Symfony DDD+CQRS. | PHP · Symfony · MCP · IA | 2024–2026 |
-| DocScope | Motor de búsqueda federada híbrida (FTS5 + vectores sqlite-vec) con servidor MCP. | Python · sqlite-vec · MCP | 2025 |
-| SmartArchive | Archivo inteligente: transcripción IA de audio + resumen automático + embeddings RAG. | Python · pgvector · RAG | 2025 |
-| PhpSemanticDoc | Documentación automática de código PHP con IA y control de cambios. | Python · IA | 2025 |
-| RuleEvolver | Evolución de reglas arquitectónicas con IA: metaprompts, benchmarks automatizados. | Python · Claude | 2025 |
-| SmokeTest v4 | Test runner con Arquitectura Hexagonal (Ports & Adapters). | Python · Hexagonal | 2025 |
-| Libris | PWA inventario libros/videojuegos con OCR, IA para metadatos y búsqueda semántica vectorial. DDD+CQRS. | PHP · pgvector · OCR · CQRS | 2024 |
-| Book Classifier | Clasificación automática de libros con Claude AI. Ejecución programada systemd. | Python · Claude AI | 2024 |
-| PdfImage2Anki | Pipeline OCR híbrido (Tesseract + Claude Vision) para conversión de documentos a tarjetas de estudio. | Python · OCR · Claude Vision | 2024 |
-| TasteMap | App web Symfony con scraping Puppeteer para mapa gastronómico. | Symfony · Puppeteer · Node.js | 2023 |
-| HogarIndexado | PWA offline para organizar y localizar objetos en el hogar. Docker/WSL2. | PWA · Docker | 2023 |
-
-## Eurolynx — Proyectos para Organismo Público I+D (2002–2017)
-
-| Proyecto | Descripción | Stack | Año |
-|----------|-------------|-------|-----|
-| ERP SERIDA | ERP a medida: Inventario, Incidencias, Facturación, RRHH. Motor contable Nested Sets con bloqueo presupuestario. 15+ años en producción. | PHP · MySQL · Oracle | 2002–2017 |
-| Infraestructura SERIDA | Gestión infraestructura enterprise 4 centros I+D, 125+ usuarios. Virtualización VMware/XenCenter, redes Linux, Zimbra, Samba, seguridad perimetral. Uptime 99,9%. | Linux · VMware · VyOS | 2002–2017 |
-| RAD Framework | Framework de desarrollo rápido: genera aplicaciones PHP desde ficheros de definición. PFC Universidad de Oviedo. Explotado comercialmente 8+ años. | PHP · MVC · Metaprogramación | 2012–2020 |
-
-## Freelance — Administración Pública (1999–2002)
-
-| Proyecto | Descripción | Stack | Año |
-|----------|-------------|-------|-----|
-| SERIDA Web & Apps | Portales públicos, intranets y aplicaciones de gestión para el Servicio Regional de Investigación. Ciclo completo en bare metal. | PHP · Linux · Apache | 1999–2002 |
-
-## Micro 6 — Gobierno del Principado de Asturias
-
-| Proyecto | Descripción | Stack | Año |
-|----------|-------------|-------|-----|
-| Automatización Infra | Automatización despliegues con clonado de imágenes + scripts. 4h→20min por equipo (91%). Resolución incidencias L3. | Windows · Novell · Scripts | ~2000 |# Listado Completo de Proyectos — Jorge Antonio Rodríguez García
+# Listado Completo de Proyectos — Jorge Antonio Rodríguez García
 
 > 50+ proyectos de Administración Pública y sector privado (2016–2026).
 > Ordenados por fecha descendente. Resúmenes de 20–40 palabras.
