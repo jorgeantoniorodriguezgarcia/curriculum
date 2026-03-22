@@ -139,79 +139,75 @@ L3 Support para infraestructura gubernamental. Automatización de despliegues: 4
 
 ---
 
-## Cómo Pienso — Decisiones Arquitectónicas
+## Cómo Pienso — 11 Decisiones Arquitectónicas
 
-A continuación detallo proyectos que ilustran mi enfoque: el reto, la decisión de diseño, las alternativas descartadas y por qué.
+Cada caso: el reto, mi decisión, la alternativa descartada y el trade-off.
 
-### Visión por Computador para Boletines Históricos (DIBA, 2023)
+### 1. Periscope — Pipeline ML con Dataset Sucio (2025)
+**Reto:** Clasificar incidencias en ética deportiva (agresiones, bullying, discriminación). Dataset con etiquetas inconsistentes y categorías desbalanceadas.
+**Decisión:** Pipeline iterativo por sprints: primero limpiar el dataset, luego reentrenar. No tiene sentido optimizar hiperparámetros sobre datos sucios.
+**Descartado:** Entrenar modelos más potentes sobre el dataset original. Más compute, mismos errores sistémicos.
+**Trade-off:** Más tiempo en limpieza manual, pero Macro-F1 de 0.35 a 0.41 (+17%) solo con la primera fase. El modelo es tan bueno como los datos.
 
-**El reto:** Digitalizar ~60.000 boletines oficiales (1833-1997). El OCR previo era de muy baja calidad y Google Vision fallaba en maquetaciones multi-columna.
+### 2. Framework Agéntico — Gobernanza de Agentes IA (2024)
+**Reto:** La IA genera código rápido pero impredecible. ¿Cómo escalar agentes IA sin perder control arquitectónico?
+**Decisión:** Máquina de estados con planificador gobernado. Los agentes siguen un plan canónico compilado desde especificaciones (BDD, OpenAPI) con origin tracking. Cada paso auditable.
+**Descartado:** Agentes con prompts ad-hoc y revisión manual. Funciona solo; ingobernable en equipo.
+**Trade-off:** Más estructura inicial (compilar plan antes de ejecutar), pero trazabilidad completa. Si un agente falla, rastreas qué especificación lo causó.
 
-**Mi decisión:** En lugar de usar el OCR para leer texto, lo usé para obtener coordenadas de caracteres. Dibujé bloques negros en las posiciones detectadas y apliqué análisis de histogramas sobre esa imagen sintética. Los umbrales de separación de columnas eran mucho más limpios que cualquier enfoque directo.
+### 3. Hub Productividad IA — Integración Empresarial con MCP (2024)
+**Reto:** Gestionar tareas, reportes y comunicaciones integrando Jira, Gmail, Slack sin depender de cada API específica.
+**Decisión:** PWA con proxy IA y servidor MCP que abstrae las integraciones. Los agentes controlan herramientas a través del protocolo MCP, no de APIs directas.
+**Descartado:** Integración directa API-a-API. Cada cambio en una herramienta rompe la integración.
+**Trade-off:** Más capas de abstracción, pero desacoplamiento total: añadir una herramienta nueva no requiere tocar las existentes.
 
-**Alternativa descartada:** Mejorar el OCR directamente o usar NLP para post-procesar el texto corrupto. Ambas vías asumían que el texto era recuperable — no lo era con la calidad disponible.
+### 4. NIMROD — Plataforma IoT para Dominios Distintos (2017–2026)
+**Reto:** Monitorización y alertas que sirva igual para centros de salud (agresiones), transporte ferroviario (meteorología) y mutuas (SOS laboral). Dominios diferentes, misma necesidad.
+**Decisión:** DDD puro: cada despliegue tiene su Bounded Context con reglas específicas, pero comparte infraestructura de alertas y motor de reglas dinámico. CQRS para separar ingesta de consulta.
+**Descartado:** Monolito parametrizable. Más rápido inicialmente, pero cada dominio contamina el modelo de los anteriores.
+**Trade-off:** Más esfuerzo en el core abstracto, pero 5 organizaciones en producción independientes. Nuevos clientes en semanas, no meses.
 
-**Trade-off:** Doble pasada de OCR (más lento), pero precisión muy superior. El cuello de botella era la calidad, no la velocidad.
+### 5. Conforcat — IA en Producción bajo Presión Extrema (2024)
+**Reto:** Entregar plataforma de formación autonómica con retraso acumulado y presión de tiempo extrema.
+**Decisión:** Adopción masiva de IA generativa en todo el ciclo (código, tests, refactor, documentación). Integración asíncrona con RabbitMQ para desacoplar APIs lentas. Chatbot RAG para soporte.
+**Descartado:** Más personas (desarrollo convencional). El cuello de botella no era fuerza bruta sino time-to-market.
+**Trade-off:** Riesgo de deuda técnica por velocidad IA, mitigado con pipeline de auditoría arquitectónica. Resultado: ×5 TTM sin degradación.
 
----
+### 6. DIBA — Visión por Computador para Boletines Históricos (2023)
+**Reto:** Digitalizar ~60.000 boletines (1833-1997). OCR de baja calidad, Google Vision fallaba en maquetaciones multi-columna.
+**Decisión:** Usar el OCR para obtener coordenadas de caracteres, no para leer texto. Dibujar bloques en posiciones detectadas y aplicar histogramas sobre la imagen sintética.
+**Descartado:** Mejorar OCR o post-procesar con NLP. Asumían texto recuperable — no lo era.
+**Trade-off:** Doble pasada de OCR (más lento), pero precisión muy superior. El cuello de botella era calidad, no velocidad.
 
-### Modernización Legacy sin Reescritura (Baix Empordà, 2021)
+### 7. Expedion — Metaprogramación para Expedientes (2023)
+**Reto:** Cada expediente administrativo se construía a medida, requiriendo meses. ¿Cómo permite a no-técnicos construir programas completos?
+**Decisión:** Motor de metadatos: cabeceras, formularios dinámicos, flujos de trabajo, generación de documentos desde plantillas. Arquitectura Hexagonal para aislar core.
+**Descartado:** Generador de código estático. Más rápido pero imposible de mantener: cada cambio requiere regenerar todo.
+**Trade-off:** Inversión alta en motor de metadatos, pero meses → semanas. Otros equipos construyen sin mi intervención.
 
-**El reto:** Ampliar un sistema de los años 90 sin reescribirlo (restricción contractual y presupuestaria). El código era frágil y el modelo de datos intocable.
+### 8. NIMROD Alertas — Motor de Reglas Reutilizable (2022)
+**Reto:** Motor de alertas que procese eventos heterogéneos y notifique por múltiples canales sin acoplar la lógica de cada canal al core.
+**Decisión:** Motor de reglas dinámico con umbrales configurables + CQRS para separar ingesta de evaluación. Canales (VoIP, SMS) como puertos de Arquitectura Hexagonal.
+**Descartado:** Switch/case por tipo de alerta y canal. Funcionaba con 2 canales, ingobernable con 5+.
+**Trade-off:** Más abstracción en el diseño, pero añadir un canal es implementar un adaptador, no tocar el core.
 
-**Mi decisión:** Modifiqué el kernel de Symfony para que actuara como "host" del código legacy. Los scripts antiguos se ejecutaban dentro del contexto de la aplicación moderna, consumiendo servicios de autenticación y autorización a través del contenedor de dependencias.
+### 9. The Switchers — Meta-aplicación Multilingüe LTR/RTL (2019)
+**Reto:** Generar toolboxes interactivos para programa de emprendimiento mediterráneo con idiomas RTL (árabe, hebreo) y LTR.
+**Decisión:** Meta-aplicación que genera toolboxes desde configuración por país/idioma. Motor de plantillas con soporte bidireccional nativo.
+**Descartado:** Crear toolbox manualmente por país. Inviable con 10+ países y 2 direcciones de texto.
+**Trade-off:** Motor de generación más complejo, pero cada país nuevo se configura en horas, no semanas.
 
-**Alternativa descartada:** Reescritura progresiva (Strangler Fig). Descartada por presupuesto y porque el pliego lo definía explícitamente como "ampliación", no como desarrollo nuevo.
+### 10. ERP SERIDA — Sistema que Sobrevive 15+ Años (2002–2017)
+**Reto:** Unificar inventario, incidencias, facturación y RRHH con motor contable de análisis jerárquico ilimitado para organismo público de I+D.
+**Decisión:** Árboles recursivos (Nested Sets) para centros de coste y conceptos de gasto con bloqueo transaccional presupuestario. Comunicación automática entre módulos con integridad referencial absoluta.
+**Descartado:** Contabilidad plana sin jerarquía. Más simple pero sin capacidad analítica por centro de coste.
+**Trade-off:** Modelo de datos más complejo, pero 15+ años en producción sin reescrituras. La inversión en diseño compensa.
 
-**Trade-off:** Complejidad en el kernel modificado, pero riesgo de regresión cercano a cero en el código existente. El modelo de datos original se preservó intacto.
-
----
-
-### Metaprogramación para Expedientes (Expedion, 2023)
-
-**El reto:** Cada expediente administrativo se construía a medida, requiriendo meses. ¿Cómo se diseña un programa que permite a otros usuarios — sin conocimientos técnicos — construir programas funcionales completos?
-
-**Mi decisión:** Un motor de metadatos que define cabeceras, formularios dinámicos con validación, flujos de trabajo y generación automática de documentos desde plantillas. Todo sobre Arquitectura Hexagonal para aislar el core del framework.
-
-**Alternativa descartada:** Generador de código estático. Habría sido más rápido de implementar pero imposible de mantener: cada cambio en el generador requeriría regenerar y re-testear todos los expedientes existentes.
-
-**Trade-off:** Inversión inicial alta en el motor de metadatos, pero ROI claro: los proyectos que antes tardaban meses se entregan en semanas. Otros equipos de la empresa construyen soluciones sobre esta plataforma sin mi intervención directa.
-
----
-
-### Gobernanza de Agentes IA (Framework Agéntico, 2024)
-
-**El reto:** La IA generativa produce código rápido pero impredecible. ¿Cómo escalar el uso de agentes IA en un equipo sin perder control arquitectónico ni trazabilidad?
-
-**Mi decisión:** Un framework con máquina de estados y planificador gobernado. Los agentes no ejecutan libremente — siguen un plan canónico compilado desde especificaciones (BDD, OpenAPI, texto libre) con origin tracking. Cada paso es auditable.
-
-**Alternativa descartada:** Dejar que los agentes operen con prompts ad-hoc y revisar manualmente el output. Funciona para un desarrollador solo; es ingobernable con un equipo.
-
-**Trade-off:** Más estructura inicial (compilar plan antes de ejecutar), pero garantía de trazabilidad completa y reproducibilidad. Si un agente produce código incorrecto, puedo rastrear exactamente qué especificación lo causó.
-
----
-
-### Plataforma IoT Reutilizable para Dominios Distintos (NIMROD, 2017–2026)
-
-**El reto:** Construir una plataforma de monitorización y alertas que sirviera igual para centros de salud (agresiones), transporte ferroviario (meteorología) y mutuas (SOS laboral). Dominios completamente diferentes, misma necesidad: detectar eventos, evaluar reglas y alertar en tiempo real.
-
-**Mi decisión:** DDD puro: cada despliegue tiene su propio Bounded Context con entidades y reglas de dominio específicas, pero comparte la infraestructura de alertas (VoIP, SMS) y el motor de reglas dinámico. CQRS para separar la ingesta masiva de eventos de la consulta analítica.
-
-**Alternativa descartada:** Una aplicación monolítica parametrizable. Habría sido más rápida de desplegar inicialmente, pero cada nuevo dominio habría contaminado el modelo de los anteriores.
-
-**Trade-off:** Más esfuerzo en el diseño inicial del core abstracto, pero 5 organizaciones en producción con despliegues independientes que no se afectan entre sí. Nuevos clientes se integran en semanas, no meses.
-
----
-
-### Pipeline ML con Dataset Sucio (Periscope, 2025)
-
-**El reto:** Clasificar automáticamente incidencias en ética deportiva (agresiones, bullying, discriminación). El dataset tenía etiquetas inconsistentes y categorías desbalanceadas.
-
-**Mi decisión:** Pipeline iterativo por sprints: primero limpiar el dataset (curation + corrección de etiquetas), luego reentrenar. No tiene sentido optimizar hiperparámetros sobre datos sucios.
-
-**Alternativa descartada:** Ir directamente a entrenar modelos más potentes sobre el dataset original. Más compute, mismos errores sistémicos.
-
-**Trade-off:** Más tiempo en limpieza manual de datos (sprints dedicados), pero mejora de Macro-F1 de 0.35 a 0.41 (+17%) solo con la primera fase de limpieza. El modelo es tan bueno como los datos que lo alimentan.
+### 11. RAD Framework — Metaprogramación desde el PFC (2012–2020)
+**Reto:** ¿Cómo generar una aplicación web completa desde un fichero de definición, sin código manual?
+**Decisión:** Motor MVC que interpreta ficheros de definición y genera CRUDs, formularios, validaciones, listados y exportación. Metaprogramación pura.
+**Descartado:** Scaffolding (generador de código estático). Genera código pero actualizar el generador rompe lo generado.
+**Trade-off:** Motor interpretado más lento que código nativo, pero evolucionable: actualizar el motor mejora todas las aplicaciones. Explotado comercialmente 8+ años.
 
 ---
 
