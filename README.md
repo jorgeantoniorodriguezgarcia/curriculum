@@ -221,7 +221,7 @@ Cada caso: el reto, mi decisión, la alternativa descartada y el trade-off.
 
 > He sido arquitecto principal en la mayoría de 50+ proyectos para Administración Pública y sector privado. Para no sobrecargar este documento, el listado completo con resúmenes está en un fichero dedicado.
 
-**[Ver listado completo de proyectos →](PROYECTOS.md)**
+**[Ver listado completo de proyectos →](PROYECTOS.md)** · [Copiar URL](https://github.com/jorgeantoniorodriguezgarcia/curriculum/blob/main/PROYECTOS.md)
 
 ---
 
