@@ -21,6 +21,23 @@
 | Hermes Calendario | Hermes/Arcadia | Módulo calendario laboral: vacaciones, permisos, IT. | PHP · Web | 2025 |
 | Incidencias IA | Prometeo (interno) | Automatización soporte con tickets IA + integración JIRA. | PHP · JIRA API · IA | 2025 |
 
+## R&D Lab — Proyectos Personales con IA y Arquitectura (2023–2026)
+
+| Proyecto | Descripción | Stack | Año |
+|----------|-------------|-------|-----|
+| Framework Agéntico | Orquestador portable de agentes IA con máquina de estados y planificador gobernado. BDD/OpenAPI → código trazable. | Claude Code · YAML · Python | 2024–2026 |
+| Hub Productividad (Tasks) | PWA gestión empresarial: Jira, Gmail, Slack con proxy IA y servidor MCP. v2 en Symfony DDD+CQRS. | PHP · Symfony · MCP · IA | 2024–2026 |
+| DocScope | Motor de búsqueda federada híbrida (FTS5 + vectores sqlite-vec) con servidor MCP. | Python · sqlite-vec · MCP | 2025 |
+| SmartArchive | Archivo inteligente: transcripción IA de audio + resumen automático + embeddings RAG. | Python · pgvector · RAG | 2025 |
+| PhpSemanticDoc | Documentación automática de código PHP con IA y control de cambios. | Python · IA | 2025 |
+| RuleEvolver | Evolución de reglas arquitectónicas con IA: metaprompts, benchmarks automatizados. | Python · Claude | 2025 |
+| SmokeTest v4 | Test runner con Arquitectura Hexagonal (Ports & Adapters). | Python · Hexagonal | 2025 |
+| Libris | PWA inventario libros/videojuegos con OCR, IA para metadatos y búsqueda semántica vectorial. DDD+CQRS. | PHP · pgvector · OCR · CQRS | 2024 |
+| Book Classifier | Clasificación automática de libros con Claude AI. Ejecución programada systemd. | Python · Claude AI | 2024 |
+| PdfImage2Anki | Pipeline OCR híbrido (Tesseract + Claude Vision) para conversión de documentos a tarjetas de estudio. | Python · OCR · Claude Vision | 2024 |
+| TasteMap | App web Symfony con scraping Puppeteer para mapa gastronómico. | Symfony · Puppeteer · Node.js | 2023 |
+| HogarIndexado | PWA offline para organizar y localizar objetos en el hogar. Docker/WSL2. | PWA · Docker | 2023 |
+
 ## Proyectos Prometeo — Arquitectura y Desarrollo (2020–2024)
 
 | Proyecto | Cliente/Contexto | Resumen | Stack | Año |
@@ -71,23 +88,6 @@
 | SECUDAMED | Prometeo (interno) | Sistema documentación médica y datos clínicos. | iOS · Android | 2018–2021 |
 | IDAE | IDAE | Actualización y mantenimiento plataforma web institucional. | Drupal PHP | 2020–2021 |
 | Vía de la Plata | B101 | App ruta cultural. | App móvil | 2021–2024 |
-
-## R&D Lab — Proyectos Personales con IA y Arquitectura (2012–2026)
-
-| Proyecto | Descripción | Stack | Año |
-|----------|-------------|-------|-----|
-| Framework Agéntico | Orquestador portable de agentes IA con máquina de estados y planificador gobernado. BDD/OpenAPI → código trazable. | Claude Code · YAML · Python | 2024–2026 |
-| Hub Productividad (Tasks) | PWA gestión empresarial: Jira, Gmail, Slack con proxy IA y servidor MCP. v2 en Symfony DDD+CQRS. | PHP · Symfony · MCP · IA | 2024–2026 |
-| DocScope | Motor de búsqueda federada híbrida (FTS5 + vectores sqlite-vec) con servidor MCP. | Python · sqlite-vec · MCP | 2025 |
-| SmartArchive | Archivo inteligente: transcripción IA de audio + resumen automático + embeddings RAG. | Python · pgvector · RAG | 2025 |
-| PhpSemanticDoc | Documentación automática de código PHP con IA y control de cambios. | Python · IA | 2025 |
-| RuleEvolver | Evolución de reglas arquitectónicas con IA: metaprompts, benchmarks automatizados. | Python · Claude | 2025 |
-| SmokeTest v4 | Test runner con Arquitectura Hexagonal (Ports & Adapters). | Python · Hexagonal | 2025 |
-| Libris | PWA inventario libros/videojuegos con OCR, IA para metadatos y búsqueda semántica vectorial. DDD+CQRS. | PHP · pgvector · OCR · CQRS | 2024 |
-| Book Classifier | Clasificación automática de libros con Claude AI. Ejecución programada systemd. | Python · Claude AI | 2024 |
-| PdfImage2Anki | Pipeline OCR híbrido (Tesseract + Claude Vision) para conversión de documentos a tarjetas de estudio. | Python · OCR · Claude Vision | 2024 |
-| TasteMap | App web Symfony con scraping Puppeteer para mapa gastronómico. | Symfony · Puppeteer · Node.js | 2023 |
-| HogarIndexado | PWA offline para organizar y localizar objetos en el hogar. Docker/WSL2. | PWA · Docker | 2023 |
 
 ## Eurolynx — Proyectos para Organismo Público I+D (2002–2017)
 
