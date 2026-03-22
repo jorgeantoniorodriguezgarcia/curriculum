@@ -106,7 +106,7 @@ Antes de Prometeo, 18 años en roles de ingeniería completa (desarrollo + infra
 ERP de misión crítica para organismo público de I+D. 4 centros, 125+ usuarios, 15+ años en producción con uptime 99,9%. Motor contable con árboles recursivos (Nested Sets) y bloqueo transaccional. Optimización SQL de minutos a sub-segundos.
 → *Lección: los sistemas que sobreviven son los que aíslan dominio de implementación.*
 
-**Technical Consultant — Freelance (1999–2002)**
+**Technical Consultant — Freelance (1999–2001)**
 Ciclo completo de ingeniería para Administración Pública en entornos bare metal pre-cloud con restricciones severas de hardware.
 → *Lección: las restricciones de recursos forjan mentalidad de optimización permanente.*
 
