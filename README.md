@@ -215,3 +215,4 @@ Symfony PHP 8.3 · Python · Docker · CI/CD con Auditoría Arquitectónica · L
 
 *Abierto a: Arquitecto de IA Generativa Senior / Staff Engineer*
 *Donde industrializar el desarrollo con IA gobernada en entornos regulados sea ventaja competitiva real.*
+

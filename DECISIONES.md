@@ -71,3 +71,4 @@ Cada caso: el reto, mi decisión, la alternativa descartada y el trade-off.
 **Decisión:** Motor MVC que interpreta ficheros de definición y genera CRUDs, formularios, validaciones, listados y exportación. Metaprogramación pura.
 **Descartado:** Scaffolding (generador de código estático). Genera código pero actualizar el generador rompe lo generado.
 **Trade-off:** Motor interpretado más lento que código nativo, pero evolucionable: actualizar el motor mejora todas las aplicaciones. Explotado comercialmente 8+ años.
+
