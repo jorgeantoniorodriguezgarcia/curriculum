@@ -18,7 +18,7 @@
 | NIMROD — SFM | Serveis Ferroviaris Mallorca | Monitorización meteorológica y detección de rayos en infraestructura ferroviaria. Protocolos Davis y EFM-100. | PHP · NIMROD | 2025–2026 |
 | IDEVA | Ayto. Valladolid | Orquestador multi-agente para plataforma SaaS de mentoría empresarial. FinOps, RAG multi-tenant, máquinas de estado. | PHP 8.3 · pgvector · IA | 2025 |
 | Asistente Letrado IA | Principado de Asturias | Legaltech RAG para procedimientos sancionadores turismo (30+ tipos documentales). FSM alineada a Ley 39/2015 LPACAP, 736 tests. | PHP · pgvector · RAG | 2025–2026 |
-| Hermes Calendario | Hermes/Arcadia | Módulo calendario laboral: vacaciones, permisos, IT. | PHP · Web | 2025 |
+| Hermes Calendario — Ampliación Baleares | Hermes/Arcadia | Ampliación de sistema HR (fichaje, nóminas, vacaciones, contratos) desarrollada con generación de código asistida por IA y auditoría multiagente — intervención humana centrada en definición de requisitos y QA final. | PHP · Web · IA | 2025–2026 |
 | Incidencias IA | Prometeo (interno) | Automatización soporte con tickets IA + integración JIRA. | PHP · JIRA API · IA | 2025 |
 
 ## R&D Lab — Proyectos Personales con IA y Arquitectura (2023–2026)
