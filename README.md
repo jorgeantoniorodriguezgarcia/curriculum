@@ -1,8 +1,10 @@
 # Jorge Antonio Rodríguez García
 
-### Principal Software & AI Architect | 25+ años diseñando sistemas críticos
+### Arquitecto de Software & IA Generativa | 25+ años industrializando sistemas críticos en entornos regulados
 
 **Oviedo, Asturias** · 686 61 70 71 · jorge@rodriguez-garcia.es
+
+**Idiomas:** Español (nativo) · Inglés B1-B2 — lectura y escritura técnica sólidas, incluida documentación y comunicación escrita con clientes, reforzada con apoyo de IA en textos de mayor complejidad; comprensión oral y conversación en desarrollo activo.
 
 [<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/jorge-antonio-rodríguez-garcía-740a7b55)
 &nbsp;
@@ -12,13 +14,13 @@
 
 ## Perfil Profesional
 
-Arquitecto de Software con 25+ años diseñando y escalando sistemas críticos para Administración Pública y entornos regulados. Doble formación: Ingeniería Informática + ADE, lo que me permite traducir marcos normativos complejos (Ley 39/2015, ENS, AI Act, DSA) en arquitecturas técnicamente viables y económicamente sostenibles.
+Arquitecto de Software con 25+ años industrializando sistemas críticos para Administración Pública y entornos regulados: de la metaprogramación de mis primeros proyectos a los agentes de IA generativa gobernados de hoy, el hilo conductor es el mismo — convertir capacidad técnica en proceso repetible, auditable y en producción. Doble formación en Ingeniería Informática y ADE: cada decisión de arquitectura se lee también en términos económicos y normativos (Ley 39/2015, ENS, AI Act).
 
-Mi foco actual: **convertir la generación de código con IA en un proceso gobernado, auditable y seguro para producción**. No prototipos — sistemas deterministas que mantienen la velocidad de la IA sin acumular deuda técnica.
+**Especialidad:** IA generativa aplicada a la industrialización del desarrollo — LLM, RAG, orquestación de agentes, gobernanza de generación de código — con un conjunto de herramientas propias que cubre desde la Definition of Ready asistida por IA hasta el pipeline CI/CD con auditoría arquitectónica, puesto en práctica en 6+ licitaciones reales de AAPP.
 
 He definido los estándares de arquitectura (DDD, Hexagonal, CQRS) que se aplican transversalmente en todos los proyectos de la empresa, incluyendo los que ejecutan otros equipos sobre las plataformas que he diseñado.
 
-### Cómo pienso
+### Filosofía de Diseño
 
 Cada proyecto que afronto parte de la misma pregunta: **¿cómo se diseña un sistema que sobreviva al tiempo, al cambio de requisitos y a la rotación de equipos?** La respuesta siempre pasa por aislar el dominio de la infraestructura, hacer explícitas las reglas de negocio y automatizar las validaciones que un humano olvidaría.
 
@@ -31,10 +33,11 @@ Cuando integro IA no busco velocidad bruta — busco **velocidad gobernada**: qu
 | Área | Detalle |
 |------|---------|
 | **Arquitectura** | DDD, Arquitectura Hexagonal, CQRS, Clean Architecture, SOLID. Aplicados en productos propios en producción durante años — no como experimento, sino como estándar organizacional que he definido y mantenido. |
-| **IA & ML** | Gobernanza de IA para desarrollo enterprise: Definition of Ready asistida por IA (BDD, OpenAPI, mockups) + pipeline CI/CD con auditoría arquitectónica. Orquestación de agentes con máquina de estados. RAG sobre búsqueda vectorial. Pipelines ML de clasificación con métricas reales (Macro-F1). |
-| **Backend** | Symfony PHP 8.3, Python. Profundidad hasta el core del framework: debugging, extensión del kernel, abstracciones para servicios del Estado (Cl@ve, Firma Digital, FNMT). |
-| **DevOps** | CI/CD con auditoría arquitectónica integrada (valida DDD/Hexagonal/CQRS en cada commit). Docker. Infraestructura Linux enterprise multi-sede. |
-| **Liderazgo** | Arquitecto principal en la mayoría de 50+ proyectos entregados. Coordinación de equipos de hasta 10 ingenieros. Definición de estándares arquitectónicos adoptados por toda la organización. |
+| **IA Generativa & LLM** | Industrialización de generación de código con foco en gobernanza — Definition of Ready asistida por IA (BDD, OpenAPI, mockups) + pipeline CI/CD con auditoría arquitectónica. Orquestación de agentes con máquina de estados. RAG sobre búsqueda vectorial. |
+| **ML aplicado** | Pipeline de clasificación con métricas de validación (Macro-F1) en un caso real (Periscope) — proyecto puntual, no área de especialización. |
+| **Backend & Abstracción** | 10 años de especialización en Symfony PHP hasta el core del framework — debugging, extensión de kernel, abstracciones para servicios del Estado (Cl@ve, Firma Digital, FNMT). Python en los pipelines de IA. Capacidad de metaprogramación (software que genera software) aplicada en múltiples proyectos como motor de velocidad de desarrollo, no como sustituto de mantenibilidad. |
+| **Sistemas & Infraestructura** | CI/CD con auditoría arquitectónica integrada (valida DDD/Hexagonal/CQRS en cada commit). Docker. Administración Linux enterprise multi-sede, automatización de despliegues (91% mejora de tiempos) — base técnica de extremo a extremo desde IT L3 hasta arquitectura. |
+| **Liderazgo** | Estándares de arquitectura propuestos y adoptados por otros equipos por convicción técnica, no por mandato directo. Mentoría técnica de perfiles junior/mid. Coordinación técnica de equipos de hasta 10 ingenieros, como interlocutor técnico principal entre cliente, negocio y arquitectura, con apoyo de herramientas internas propias (Hub Productividad MCP) para el seguimiento de estado de proyectos. |
 | **Negocio** | Licenciado en ADE. Los requisitos normativos no son un obstáculo — son restricciones de diseño que integro en la arquitectura desde el inicio. |
 
 ---
@@ -49,23 +52,26 @@ Arquitecto principal en la mayoría de los 50+ proyectos de software para Admini
 **Arquitectura de Soluciones IA (2024-2026)**
 
 Diseño y liderazgo de propuestas técnicas de IA para entornos regulados con trazabilidad completa (normativa → arquitectura → entregables):
-- Chatbots de cumplimiento DSA + AI Act en 24 idiomas con LLM europeo soberano y RAG — Institución Europea.
+- Chatbots de cumplimiento AI Act en 24 idiomas con LLM europeo soberano y RAG — Institución Europea.
 - Asistente omnicanal NextGenEU — Administración Local.
 - RAG legaltech para automatización de dictámenes (30+ tipos documentales) — Administración Autonómica.
 - Orquestador multi-agente para plataforma SaaS de mentoría empresarial con FinOps para control de costes LLM y RAG multi-tenant con aislamiento estricto de datos.
-- Pipeline ML para clasificación de riesgo en ética deportiva: dataset curation, reentrenamiento, validación y selección de modelo. Mejora de Macro-F1 de 0.35 a 0.41 (+17%).
+- Aplicación puntual de ML para clasificación de riesgo en ética deportiva (Periscope): dataset curation, reentrenamiento, validación y selección de modelo. Mejora de Macro-F1 de 0.35 a 0.41 (+17%).
 
 **Plataforma IoT de Monitorización y Alertas**
 
 Sistema propio con DDD + CQRS + Hexagonal. Alertas en tiempo real por VoIP y SMS con motor de reglas dinámico. Desplegado y operando en producción en 5 organizaciones: Servicio Regional de Salud (~100 centros), 2 Mutuas de Accidentes de Trabajo, Empresa Pública de infraestructuras y Consorcio de Transporte.
 
 **Hitos de Ingeniería**
-- Pipeline ML clasificación de riesgo (Periscope): dataset curation iterativo, Macro-F1 +17% solo con limpieza de datos.
-- Framework agéntico con máquina de estados y planificador gobernado: especificaciones → código trazable y auditable.
+
+Los más relevantes:
+- **Plataforma IoT (NIMROD)** con DDD+CQRS: 5 organizaciones en producción (~100 centros de salud), motor de reglas dinámico con alertas VoIP/SMS.
+- **Pipeline de visión por computador (DIBA)** para ~60.000 boletines históricos: OCR como sensor de posición + histogramas, superando herramientas comerciales.
+- **Framework agéntico** con máquina de estados y planificador gobernado: especificaciones → código trazable y auditable.
+- **Adopción de IA generativa en producción (Conforcat)**: reducción de time-to-market ×5, integración asíncrona RabbitMQ y chatbot RAG.
+
+Además:
 - Hub de productividad con servidor MCP: agentes IA controlan Jira/Slack/Gmail a través de protocolo estándar, no APIs directas.
-- Plataforma IoT (NIMROD) con DDD+CQRS: 5 organizaciones en producción (~100 centros salud), motor de reglas dinámico con alertas VoIP/SMS.
-- Adopción de IA generativa en plataforma de formación (Conforcat): reducción de time-to-market ×5, integración asíncrona RabbitMQ y chatbot RAG.
-- Pipeline de visión por computador para ~60.000 boletines históricos (DIBA): OCR como sensor de posición + histogramas, superando herramientas comerciales.
 - Plataforma low-code de metaprogramación (Expedion): sistemas de expedientes desde interfaz visual, meses → semanas, reutilizada por otros equipos.
 - Motor de alertas reutilizable (NIMROD Alertas): canales de notificación como puertos hexagonales, añadir canal = implementar adaptador.
 - Meta-aplicación multilingüe LTR/RTL (The Switchers): toolboxes interactivos generados por configuración para 10+ países.
@@ -82,7 +88,7 @@ Sistema propio con DDD + CQRS + Hexagonal. Alertas en tiempo real por VoIP y SMS
 Laboratorio personal de I+D orientado a crear **aceleradores reutilizables**: herramientas, frameworks y metodologías que valido internamente y luego transfiero a producción enterprise. La gobernanza de IA y la metodología de análisis que uso en licitaciones reales nacieron aquí.
 
 **Gobernanza de IA (transferido a producción)**
-- Sistema end-to-end validado en 6+ licitaciones reales: Definition of Ready asistida por IA (BDD, OpenAPI, mockups) + pipeline CI/CD con auditoría arquitectónica (DDD, Hexagonal, CQRS).
+- Sistema end-to-end aplicado en 6+ licitaciones reales: Definition of Ready asistida por IA (BDD, OpenAPI, mockups) + pipeline CI/CD con auditoría arquitectónica (DDD, Hexagonal, CQRS).
 - Metodología de análisis completa (requisitos, cumplimiento normativo, modelo conceptual, trazabilidad, reglas, procesos, casos de uso) — base de todas las propuestas técnicas de la empresa.
 - Evolución de reglas arquitectónicas con IA: metaprompts y benchmarks automatizados para mejorar la calidad del código generado.
 
@@ -145,75 +151,47 @@ L3 Support para infraestructura gubernamental. Automatización de despliegues: 4
 
 ---
 
-## Cómo Pienso — 11 Decisiones Arquitectónicas
+## Cómo Pienso — Decisiones Arquitectónicas
 
-Cada caso: el reto, mi decisión, la alternativa descartada y el trade-off.
+Cada caso: el reto, mi decisión, la alternativa descartada y el trade-off. Seis ejemplos aquí, las 11 completas en el fichero dedicado.
 
-### 1. Periscope — Pipeline ML con Dataset Sucio (2025)
+### Periscope — Pipeline ML con Dataset Sucio (2025)
 **Reto:** Clasificar incidencias en ética deportiva (agresiones, bullying, discriminación). Dataset con etiquetas inconsistentes y categorías desbalanceadas.
 **Decisión:** Pipeline iterativo por sprints: primero limpiar el dataset, luego reentrenar. No tiene sentido optimizar hiperparámetros sobre datos sucios.
 **Descartado:** Entrenar modelos más potentes sobre el dataset original. Más compute, mismos errores sistémicos.
 **Trade-off:** Más tiempo en limpieza manual, pero Macro-F1 de 0.35 a 0.41 (+17%) solo con la primera fase. El modelo es tan bueno como los datos.
 
-### 2. Framework Agéntico — Gobernanza de Agentes IA (2024)
+### Framework Agéntico — Gobernanza de Agentes IA (2024)
 **Reto:** La IA genera código rápido pero impredecible. ¿Cómo escalar agentes IA sin perder control arquitectónico?
 **Decisión:** Máquina de estados con planificador gobernado. Los agentes siguen un plan canónico compilado desde especificaciones (BDD, OpenAPI) con origin tracking. Cada paso auditable.
 **Descartado:** Agentes con prompts ad-hoc y revisión manual. Funciona solo; ingobernable en equipo.
 **Trade-off:** Más estructura inicial (compilar plan antes de ejecutar), pero trazabilidad completa. Si un agente falla, rastreas qué especificación lo causó.
 
-### 3. Hub Productividad IA — Integración Empresarial con MCP (2024)
-**Reto:** Gestionar tareas, reportes y comunicaciones integrando Jira, Gmail, Slack sin depender de cada API específica.
-**Decisión:** PWA con proxy IA y servidor MCP que abstrae las integraciones. Los agentes controlan herramientas a través del protocolo MCP, no de APIs directas.
-**Descartado:** Integración directa API-a-API. Cada cambio en una herramienta rompe la integración.
-**Trade-off:** Más capas de abstracción, pero desacoplamiento total: añadir una herramienta nueva no requiere tocar las existentes.
-
-### 4. NIMROD — Plataforma IoT para Dominios Distintos (2017–2026)
+### NIMROD — Plataforma IoT para Dominios Distintos (2017–2026)
 **Reto:** Monitorización y alertas que sirva igual para centros de salud (agresiones), transporte ferroviario (meteorología) y mutuas (SOS laboral). Dominios diferentes, misma necesidad.
 **Decisión:** DDD puro: cada despliegue tiene su Bounded Context con reglas específicas, pero comparte infraestructura de alertas y motor de reglas dinámico. CQRS para separar ingesta de consulta.
 **Descartado:** Monolito parametrizable. Más rápido inicialmente, pero cada dominio contamina el modelo de los anteriores.
 **Trade-off:** Más esfuerzo en el core abstracto, pero 5 organizaciones en producción independientes. Nuevos clientes en semanas, no meses.
 
-### 5. Conforcat — IA en Producción bajo Presión Extrema (2024)
+### Conforcat — IA en Producción bajo Presión Extrema (2024)
 **Reto:** Entregar plataforma de formación autonómica con retraso acumulado y presión de tiempo extrema.
 **Decisión:** Adopción masiva de IA generativa en todo el ciclo (código, tests, refactor, documentación). Integración asíncrona con RabbitMQ para desacoplar APIs lentas. Chatbot RAG para soporte.
 **Descartado:** Más personas (desarrollo convencional). El cuello de botella no era fuerza bruta sino time-to-market.
 **Trade-off:** Riesgo de deuda técnica por velocidad IA, mitigado con pipeline de auditoría arquitectónica. Resultado: ×5 TTM sin degradación.
 
-### 6. DIBA — Visión por Computador para Boletines Históricos (2023)
-**Reto:** Digitalizar ~60.000 boletines (1833-1997). OCR de baja calidad, Google Vision fallaba en maquetaciones multi-columna.
-**Decisión:** Usar el OCR para obtener coordenadas de caracteres, no para leer texto. Dibujar bloques en posiciones detectadas y aplicar histogramas sobre la imagen sintética.
-**Descartado:** Mejorar OCR o post-procesar con NLP. Asumían texto recuperable — no lo era.
-**Trade-off:** Doble pasada de OCR (más lento), pero precisión muy superior. El cuello de botella era calidad, no velocidad.
-
-### 7. Expedion — Metaprogramación para Expedientes (2023)
+### Expedion — Metaprogramación para Expedientes (2023)
 **Reto:** Cada expediente administrativo se construía a medida, requiriendo meses. ¿Cómo permite a no-técnicos construir programas completos?
 **Decisión:** Motor de metadatos: cabeceras, formularios dinámicos, flujos de trabajo, generación de documentos desde plantillas. Arquitectura Hexagonal para aislar core.
 **Descartado:** Generador de código estático. Más rápido pero imposible de mantener: cada cambio requiere regenerar todo.
 **Trade-off:** Inversión alta en motor de metadatos, pero meses → semanas. Otros equipos construyen sin mi intervención.
 
-### 8. NIMROD Alertas — Motor de Reglas Reutilizable (2022)
-**Reto:** Motor de alertas que procese eventos heterogéneos y notifique por múltiples canales sin acoplar la lógica de cada canal al core.
-**Decisión:** Motor de reglas dinámico con umbrales configurables + CQRS para separar ingesta de evaluación. Canales (VoIP, SMS) como puertos de Arquitectura Hexagonal.
-**Descartado:** Switch/case por tipo de alerta y canal. Funcionaba con 2 canales, ingobernable con 5+.
-**Trade-off:** Más abstracción en el diseño, pero añadir un canal es implementar un adaptador, no tocar el core.
-
-### 9. The Switchers — Meta-aplicación Multilingüe LTR/RTL (2019)
-**Reto:** Generar toolboxes interactivos para programa de emprendimiento mediterráneo con idiomas RTL (árabe, hebreo) y LTR.
-**Decisión:** Meta-aplicación que genera toolboxes desde configuración por país/idioma. Motor de plantillas con soporte bidireccional nativo.
-**Descartado:** Crear toolbox manualmente por país. Inviable con 10+ países y 2 direcciones de texto.
-**Trade-off:** Motor de generación más complejo, pero cada país nuevo se configura en horas, no semanas.
-
-### 10. ERP SERIDA — Sistema que Sobrevive 15+ Años (2002–2017)
+### ERP SERIDA — Sistema que Sobrevive 15+ Años (2002–2017)
 **Reto:** Unificar inventario, incidencias, facturación y RRHH con motor contable de análisis jerárquico ilimitado para organismo público de I+D.
 **Decisión:** Árboles recursivos (Nested Sets) para centros de coste y conceptos de gasto con bloqueo transaccional presupuestario. Comunicación automática entre módulos con integridad referencial absoluta.
 **Descartado:** Contabilidad plana sin jerarquía. Más simple pero sin capacidad analítica por centro de coste.
 **Trade-off:** Modelo de datos más complejo, pero 15+ años en producción sin reescrituras. La inversión en diseño compensa.
 
-### 11. RAD Framework — Metaprogramación desde el PFC (2012–2020)
-**Reto:** ¿Cómo generar una aplicación web completa desde un fichero de definición, sin código manual?
-**Decisión:** Motor MVC que interpreta ficheros de definición y genera CRUDs, formularios, validaciones, listados y exportación. Metaprogramación pura.
-**Descartado:** Scaffolding (generador de código estático). Genera código pero actualizar el generador rompe lo generado.
-**Trade-off:** Motor interpretado más lento que código nativo, pero evolucionable: actualizar el motor mejora todas las aplicaciones. Explotado comercialmente 8+ años.
+**[Ver las 11 decisiones completas →](DECISIONES.md)**
 
 ---
 
@@ -228,12 +206,12 @@ Cada caso: el reto, mi decisión, la alternativa descartada y el trade-off.
 ## Stack Tecnológico
 
 ```
-Symfony PHP 8.3 · Python · DDD · CQRS · Arquitectura Hexagonal
-RAG · Búsqueda Vectorial · ML Classification · Orquestación de Agentes
-Docker · CI/CD con Auditoría Arquitectónica · Linux Enterprise
+RAG · Orquestación de Agentes · LLM · Búsqueda Vectorial
+DDD · CQRS · Arquitectura Hexagonal · ML Classification
+Symfony PHP 8.3 · Python · Docker · CI/CD con Auditoría Arquitectónica · Linux Enterprise
 ```
 
 ---
 
-*Abierto a: Arquitecto IA Senior · Gerente Técnico*
-*Donde gobernar la IA sea ventaja competitiva real.*
+*Abierto a: Arquitecto de IA Generativa Senior / Staff Engineer*
+*Donde industrializar el desarrollo con IA gobernada en entornos regulados sea ventaja competitiva real.*
