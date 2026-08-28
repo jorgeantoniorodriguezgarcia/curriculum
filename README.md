@@ -52,7 +52,7 @@ Arquitecto principal en la mayoría de los 50+ proyectos de software para Admini
 **Arquitectura de Soluciones IA (2024-2026)**
 
 Diseño y liderazgo de soluciones de IA en producción para entornos regulados:
-- RAG legaltech para procedimientos sancionadores en turismo (30+ tipos documentales): máquina de estados alineada a Ley 39/2015 LPACAP con transiciones automáticas por plazos legales — Principado de Asturias.
+- RAG legaltech para procedimientos sancionadores en turismo (30+ tipos documentales): máquina de estados alineada a Ley 39/2015 LPACAP con transiciones automáticas por plazos legales, desarrollado con generación de código asistida por IA (intervención humana centrada en definición y QA final) — Principado de Asturias.
 - Orquestador multi-agente para plataforma SaaS de mentoría empresarial con FinOps para control de costes LLM y RAG multi-tenant con aislamiento estricto de datos — Ayuntamiento de Valladolid.
 - Aplicación puntual de ML para clasificación de riesgo en ética deportiva (Periscope): dataset curation, reentrenamiento, validación y selección de modelo. Mejora de Macro-F1 de 0.35 a 0.41 (+17%).
 

@@ -10,14 +10,14 @@
 | Proyecto | Cliente/Contexto | Resumen | Stack | Año |
 |----------|-----------------|---------|-------|-----|
 | Periscope | Ethics for Sports | Pipeline ML completo para clasificación de riesgo en ética deportiva. Dataset curation, reentrenamiento y validación. Macro-F1 +17%. | Python · ML · pgvector | 2025–2026 |
-| NIMROD v3 | Prometeo (producto) | Plataforma IoT monitorización y alertas con generador de código IA. DDD+CQRS+Hexagonal. 5 clientes en producción. | Symfony PHP 8.3 · DDD · CQRS | 2023–2026 |
+| NIMROD v3 | Prometeo (producto) | Plataforma IoT monitorización y alertas, última versión desarrollada con generación de código asistida por IA (intervención humana centrada en definición y QA final). DDD+CQRS+Hexagonal. 5 clientes en producción. | Symfony PHP 8.3 · DDD · CQRS · IA | 2023–2026 |
 | NIMROD — SES | Junta de Extremadura | Despliegue para gestión de agresiones en ~100 zonas de salud de Extremadura. | PHP · NIMROD · MySQL | 2023–2026 |
 | NIMROD — UMIVALE | Mutua AT | Despliegue v1/v2 para gestión de agresiones y SOS. Optimización 80-90% queries en listas de eventos. | PHP 7.4 · RHEL 8 | 2025–2026 |
 | NIMROD — MAZ | Mutual Accidentes Zaragoza | Despliegue en intranet corporativa. | PHP · NIMROD | 2025–2026 |
 | NIMROD — SARGA | Gobierno de Aragón | Gestión de agresiones/SOS en entidades del Gobierno de Aragón. | PHP · NIMROD | 2025–2026 |
 | NIMROD — SFM | Serveis Ferroviaris Mallorca | Monitorización meteorológica y detección de rayos en infraestructura ferroviaria. Protocolos Davis y EFM-100. | PHP · NIMROD | 2025–2026 |
 | IDEVA | Ayto. Valladolid | Orquestador multi-agente para plataforma SaaS de mentoría empresarial. FinOps, RAG multi-tenant, máquinas de estado. | PHP 8.3 · pgvector · IA | 2025 |
-| Asistente Letrado IA | Principado de Asturias | Legaltech RAG para procedimientos sancionadores turismo (30+ tipos documentales). FSM alineada a Ley 39/2015 LPACAP, 736 tests. | PHP · pgvector · RAG | 2025–2026 |
+| Asistente Letrado IA | Principado de Asturias | Legaltech RAG para procedimientos sancionadores turismo (30+ tipos documentales), desarrollado con generación de código asistida por IA (intervención humana centrada en definición y QA final). FSM alineada a Ley 39/2015 LPACAP, 736 tests. | PHP · pgvector · RAG · IA | 2025–2026 |
 | Hermes Calendario — Ampliación Baleares | Hermes/Arcadia | Ampliación de sistema HR (fichaje, nóminas, vacaciones, contratos) desarrollada con generación de código asistida por IA y auditoría multiagente — intervención humana centrada en definición de requisitos y QA final. | PHP · Web · IA | 2025–2026 |
 | Incidencias IA | Prometeo (interno) | Automatización soporte con tickets IA + integración JIRA. | PHP · JIRA API · IA | 2025 |
 
