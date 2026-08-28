@@ -51,11 +51,9 @@ Arquitecto principal en la mayoría de los 50+ proyectos de software para Admini
 
 **Arquitectura de Soluciones IA (2024-2026)**
 
-Diseño y liderazgo de propuestas técnicas de IA para entornos regulados con trazabilidad completa (normativa → arquitectura → entregables):
-- Chatbots de cumplimiento AI Act en 24 idiomas con LLM europeo soberano y RAG — Institución Europea.
-- Asistente omnicanal NextGenEU — Administración Local.
+Diseño y liderazgo de soluciones de IA en producción para entornos regulados:
 - RAG legaltech para automatización de dictámenes (30+ tipos documentales) — Administración Autonómica.
-- Orquestador multi-agente para plataforma SaaS de mentoría empresarial con FinOps para control de costes LLM y RAG multi-tenant con aislamiento estricto de datos.
+- Orquestador multi-agente para plataforma SaaS de mentoría empresarial con FinOps para control de costes LLM y RAG multi-tenant con aislamiento estricto de datos — Ayuntamiento de Valladolid.
 - Aplicación puntual de ML para clasificación de riesgo en ética deportiva (Periscope): dataset curation, reentrenamiento, validación y selección de modelo. Mejora de Macro-F1 de 0.35 a 0.41 (+17%).
 
 **Plataforma IoT de Monitorización y Alertas**
