@@ -207,7 +207,7 @@ Cada caso: el reto, mi decisión, la alternativa descartada y el trade-off. Seis
 
 ```
 RAG · Orquestación de Agentes · LLM · Búsqueda Vectorial
-DDD · CQRS · Arquitectura Hexagonal · ML Classification
+DDD · CQRS · Arquitectura Hexagonal · ML Classification (puntual)
 Symfony PHP 8.3 · Python · Docker · CI/CD con Auditoría Arquitectónica · Linux Enterprise
 ```
 
